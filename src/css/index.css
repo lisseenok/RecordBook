@@ -1,0 +1,18 @@
+* {
+    block-size: border-box;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.leftCowButton {
+    height: 40px;
+    width: 40px;
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+    margin-right: 20px;
+    background-size: 100% 100% !important;
+    background: #F3F3F4 url('./src/resourses/ic.svg') no-repeat right;
+    /*background-image: url('/src/resourses/ic1.png');*/
+}
