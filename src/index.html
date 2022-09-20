@@ -3,33 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/style.css" rel="stylesheet">
     <link href="/src/css/index.css" rel="stylesheet">
 </head>
-<body class="bg-amber-50 mr-3 ml-3">
-    <header class="">
-        <div class="flex justify-between pt-4 pb-4 items-center">
-            <div class="flex items-center">
-                <button class="w-6 h-6 mr-4">
+<body class="body">
+    <nav class="">
+        <div class="header">
+            <div class="title">
+                <button class="leftCowButton">
                     <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">
                         <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/>
                     </svg>
                 </button>
-                <div class="font-bold text-2xl">Электронная зачетная книжка</div>
+                <div style="font-weight: bold; font-size: 1.25rem; line-height: 1.75rem;">Электронная зачетная книжка</div>
             </div>
 
-            <div class="space-x-8">
-                <a href="" class="hover:underline">Фамилия И. О.</a>
-                <a href="" class="bg-red-500 py-1.5 px-4 rounded-full text-amber-50 hover:bg-red-600">Выйти</a>
+            <div>
+                <a href="" class="userName">Фамилия И. О.</a>
+                <a href="" class="logOutButton">Выйти</a>
             </div>
+
         </div>
         <hr/>
-    </header>
+    </nav>
 
-    <main class="py-10">
-        <h1 class="font-bold text-xl">Панель студента</h1>
-        <a href=""><h2 class="text-xl py-4">Зачетная книжка</h2></a>
-        <a href=""><h2 class="text-xl">Помощь</h2></a>
+    <main class="contentBlock">
+        <aside class="studentPanel">
+            <div style="font-weight: bold; font-size: 1.25rem; line-height: 1.75rem;">Панель студента</div>
+            <div style="font-size: 1.25rem; line-height: 1.75rem; margin: 16px 0;">
+                <a href="" style="text-decoration: none; color: black;"><span>Зачетная книжка</span></a>
+            </div>
+            <div style="font-size: 1.25rem; line-height: 1.75rem; margin: 16px 0;">
+                <a href="" class="help"><span>Помощь</span></a>
+            </div>
+        </aside>
+
+        <div class="recordBook">
+                <h1>
+                    тут табличка с зачеткой
+                </h1>
+        </div>
+
     </main>
+
+    <footer class="footer">
+    <address>
+        <a href="https://www.mirea.ru" style="color: black">РТУ МИРЭА</a>
+    </address>
+        <ul class="links">
+            <li>
+                <a href="" class="link">About</a>
+            </li>
+            <li>
+                <a href="" class="link">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="" class="link">Licensing</a>
+            </li>
+            <li>
+                <a href="" class="link">Contact</a>
+            </li>
+        </ul>
+    </footer>
 </body>
+
+
 </html>

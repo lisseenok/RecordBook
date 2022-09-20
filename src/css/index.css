@@ -1,6 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 * {
+    font-family: Nunito, sans-serif;
     block-size: border-box;
+    padding: 0;
+    margin: 0;
 }
+a {
+    text-decoration: none;
+}
+
+.body {
+    background-color: rgb(255 251 235);
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    align-items: center;
+    margin: 0 10px;
+}
+
 
 .title {
     display: flex;
@@ -8,11 +29,87 @@
 }
 
 .leftCowButton {
-    height: 40px;
-    width: 40px;
-    /*background-color: rgba(0, 0, 0, 0.3);*/
+    height: 24px;
+    width: 24px;
     margin-right: 20px;
-    background-size: 100% 100% !important;
-    background: #F3F3F4 url('./src/resourses/ic.svg') no-repeat right;
-    /*background-image: url('/src/resourses/ic1.png');*/
+    border: none;
+    background: none;
+    cursor: pointer;
 }
+
+.userName {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.userName:hover {
+    text-decoration: underline;
+}
+
+
+.logOutButton {
+    background: rgb(239 68 68);
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.logOutButton:hover {
+    background: rgb(220 38 38);
+}
+
+.contentBlock {
+    display: flex;
+    justify-content: space-between;
+    /*width: 100%;*/
+    height: 100vh;
+    margin-right: 20px; /* 12px */
+    margin-left: 0.75rem;
+}
+
+.recordBook {
+    background-color: #E5E7EB;
+    /*width: 80%;*/
+    display: flex;
+}
+
+.studentPanel {
+    margin-right: 20px;
+    padding: 20px;
+    width: 250px;
+}
+
+.studentPanel .help {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    padding: 16px;
+    /*background: #4B5563;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(35, 88, 164, 0.05);
+    box-shadow: inset 0px 4px 14px rgba(35, 88, 164, 0.15);
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.link {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
