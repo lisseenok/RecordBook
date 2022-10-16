@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/css/register.css" rel="stylesheet">
+    <title>Регистрация</title>
+</head>
+<body class="body">
+    <nav class="navBar">
+        <div class="header">
+            <div class="title">
+                <button class="leftCowButton">
+                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                        <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/>
+                    </svg>
+                </button>
+                <div class="pageName">Электронная зачетная книжка</div>
+            </div>
+
+            <div>
+                <a href="" class="logInButton">Войти</a>
+            </div>
+
+        </div>
+        <hr/>
+    </nav>
+    <div class="registerBlock">
+        <form method="POST" class="registerForm">
+            <h2 style="margin-bottom: 20px">Регистрация</h2>
+            <input type="text" id="name" placeholder="Введите имя" class="inputText">
+
+            <input type="text" id="surname" placeholder="Введите фамилию" class="inputText">
+
+            <input type="text" id="secondname" placeholder="Введите отчество" class="inputText">
+
+            <input type="email" id="email" placeholder="Введите почту в домене edu.mirea.ru" class="inputText">
+
+            <input type="tel" id="tel" placeholder="Введите номер телефона" class="inputText">
+
+            <input type="email" id="group" placeholder="Введите группу" class="inputText">
+
+            <input type="password" id="password" placeholder="Введите пароль" class="inputText">
+
+            <input type="password" id="password2" placeholder="Повторите пароль" class="inputText">
+
+            <div class="inputText">
+                <label for="course_select">Выберете курс</label>
+                <select name="course" id="course_select" class="courseSelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+
+            <div class="checkBoxAccept">
+                <input type="checkbox" id="accept">
+                <label for="accept">Согласен на обработку персональных данных</label>
+            </div>
+
+            <input type="submit" value="Зарегистрироваться" class="submitButton">
+        </form>
+    </div>
+</body>
+</html>

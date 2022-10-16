@@ -3,67 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/src/css/index.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <title>Главная</title>
 </head>
 <body class="body">
-    <nav class="">
-        <div class="header">
-            <div class="title">
-                <button class="leftCowButton">
-                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">
-                        <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/>
-                    </svg>
-                </button>
-                <div style="font-weight: bold; font-size: 1.25rem; line-height: 1.75rem;">Электронная зачетная книжка</div>
-            </div>
+<nav class="navBar">
+    <div class="header">
 
-            <div>
-                <a href="" class="userName">Фамилия И. О.</a>
-                <a href="" class="logOutButton">Выйти</a>
+        <div class="title">
+            <div class="burgerBlock">
+                <input id="burger" class="burgerCheckbox" type="checkbox"/>
+                <label for="burger"></label>
+                <span class="pageName">Электронная зачетная книжка</span>
+                <aside class="studentPanel">
+                    <div style="font-weight: bold; font-size: 1.25rem; line-height: 1.75rem;">Панель студента</div>
+                    <div style="font-size: 1.25rem; line-height: 1.75rem; margin: 16px 0;">
+                        <a href="" style="text-decoration: none; color: black;"><span>Зачетная книжка</span></a>
+                    </div>
+                    <div style="font-size: 1.25rem; line-height: 1.75rem; margin: 16px 0;">
+                        <a href="help.html" class="help"><span>Помощь</span></a>
+                    </div>
+                </aside>
             </div>
-
-        </div>
-        <hr/>
-    </nav>
-
-    <main class="contentBlock">
-        <aside class="studentPanel">
-            <div style="font-weight: bold; font-size: 1.25rem; line-height: 1.75rem;">Панель студента</div>
-            <div style="font-size: 1.25rem; line-height: 1.75rem; margin: 16px 0;">
-                <a href="" style="text-decoration: none; color: black;"><span>Зачетная книжка</span></a>
-            </div>
-            <div style="font-size: 1.25rem; line-height: 1.75rem; margin: 16px 0;">
-                <a href="" class="help"><span>Помощь</span></a>
-            </div>
-        </aside>
-
-        <div class="recordBook">
-                <h1>
-                    тут табличка с зачеткой
-                </h1>
         </div>
 
-    </main>
+        <div class="rightBlock">
+            <a href="" class="userName">Фамилия И. О.</a>
+            <a href="" class="logOutButton">Выйти</a>
+        </div>
 
-    <footer class="footer">
+    </div>
+    <hr/>
+</nav>
+
+<main class="contentBlock">
+
+    <div class="recordBook">
+        <h1>
+            тут табличка с зачеткой точнее пока тут просто котики смешные
+        </h1>
+        <div class="gallery">
+            <div class="photoBlock">
+                <img src="../src/photos/photo1.jpg" class="photo" alt="cat">
+            </div>
+            <div class="photoBlock">
+                <img src="../src/photos/photo2.jpg" class="photo" alt="cat">
+            </div>
+            <div class="photoBlock">
+                <img src="../src/photos/photo3.jpg" class="photo" alt="cat">
+            </div>
+            <div class="photoBlock">
+                <img src="../src/photos/photo4.jpg" class="photo" alt="cat">
+            </div>
+            <div class="photoBlock">
+                <img src="../src/photos/photo5.jpg" class="photo" alt="cat">
+            </div>
+            <div class="photoBlock">
+                <img src="../src/photos/photo6.jpg" class="photo" alt="cat">
+            </div>
+            <div class="photoBlock">
+                <img src="../src/photos/photo7.jpg" class="photo" alt="cat">
+            </div>
+            <div class="photoBlock">
+                <img src="../src/photos/photo8.jpg" class="photo" alt="cat">
+            </div>
+            <div class="photoBlock">
+                <img src="../src/photos/photo9.jpg" class="photo" alt="cat">
+            </div>
+            <div class="photoBlock">
+                <img src="../src/photos/photo1.jpg" class="photo" alt="cat">
+            </div>
+            <div class="photoBlock">
+                <img src="../src/photos/photo2.jpg" class="photo" alt="cat">
+            </div>
+            <div class="photoBlock">
+                <img src="../src/photos/photo3.jpg" class="photo" alt="cat">
+            </div>
+            <div class="photoBlock">
+                <img src="../src/photos/photo4.jpg" class="photo" alt="cat">
+            </div>
+            <div class="photoBlock">
+                <img src="../src/photos/photo5.jpg" class="photo" alt="cat">
+            </div>
+            <div class="photoBlock">
+                <img src="../src/photos/photo6.jpg" class="photo" alt="cat">
+            </div>
+            <div class="photoBlock">
+                <img src="../src/photos/photo7.jpg" class="photo" alt="cat">
+            </div>
+            <div class="photoBlock">
+                <img src="../src/photos/photo8.jpg" class="photo" alt="cat">
+            </div>
+            <div class="photoBlock">
+                <img src="../src/photos/photo9.jpg" class="photo" alt="cat">
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer">
     <address>
         <a href="https://www.mirea.ru" style="color: black">РТУ МИРЭА</a>
     </address>
-        <ul class="links">
-            <li>
-                <a href="" class="link">About</a>
-            </li>
-            <li>
-                <a href="" class="link">Privacy Policy</a>
-            </li>
-            <li>
-                <a href="" class="link">Licensing</a>
-            </li>
-            <li>
-                <a href="" class="link">Contact</a>
-            </li>
-        </ul>
-    </footer>
+    <ul class="links">
+        <li>
+            <a href="" class="link">About</a>
+        </li>
+        <li>
+            <a href="" class="link">Privacy Policy</a>
+        </li>
+        <li>
+            <a href="" class="link">Licensing</a>
+        </li>
+        <li>
+            <a href="" class="link">Contact</a>
+        </li>
+    </ul>
+</footer>
 </body>
 
 

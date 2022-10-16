@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
 * {
     font-family: Nunito, sans-serif;
-    block-size: border-box;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
 a {
     text-decoration: none;
 }
@@ -14,71 +16,100 @@ a {
 
 }
 
+.navBar {
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 10;
+    background-color: rgb(255 251 235);
+    top: 0;
+    left: 0;
+    height: 65px;
+    width: 100%;
+}
+.navBar hr {
+    height: 1px;
+    border: none;
+    color: black;
+    background-color: black;
+    opacity: 30%;
+    margin-block: 0;
+    margin-inline: 0;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     padding: 16px 0;
+    height: 64px;
     align-items: center;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
+.pageName {
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1rem;
+}
 
 .title {
+    position: relative;
     display: flex;
     align-items: center;
 }
 
-.leftCowButton {
-    height: 24px;
-    width: 24px;
-    margin-right: 20px;
-    border: none;
-    background: none;
+.burgerBlock {
+    /*background-color: red;*/
+    display: flex;
+    align-items: center;
+    line-height: 0;
+}
+
+.burgerBlock .burgerCheckbox {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.burgerCheckbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+
+.burgerBlock .burgerCheckbox+label::before {
+    display: inline-block;
+    margin-right: 15px;
     cursor: pointer;
+    content: "";
+    /*border: 1px black solid;*/
+    background: url("../resources/burger.svg") no-repeat;
+    /*background: url("burger.svg") no-repeat;*/
+    flex-shrink: 0; /* сколько элементик готов отдать */
+    flex-grow: 0; /* сколько элементик готов забрать (свободного пр-ва) */
+    width: 24px;
+    height: 24px;
 }
 
-.userName {
-    margin-right: 20px;
-    text-decoration: none;
-    color: black;
+/* если нажали на бургер, то выдвигается панель */
+.burgerBlock .burgerCheckbox:checked ~.studentPanel {
+    left: 0;
 }
 
-.userName:hover {
-    text-decoration: underline;
-}
-
-
-.logOutButton {
-    background: rgb(239 68 68);
-    border-radius: 20px;
-    color: white;
-    text-decoration: none;
-    padding: 5px 15px;
-}
-
-.logOutButton:hover {
-    background: rgb(220 38 38);
-}
-
-.contentBlock {
-    display: flex;
-    justify-content: space-between;
-    /*width: 100%;*/
-    height: 100vh;
-    margin-right: 20px; /* 12px */
-    margin-left: 0.75rem;
-}
-
-.recordBook {
-    background-color: #E5E7EB;
-    /*width: 80%;*/
-    display: flex;
+/* сменяем на крестик, когда меню открыто */
+.burgerBlock .burgerCheckbox:checked +label::before  {
+    background: url("../resources/burger 2.svg") no-repeat;
 }
 
 .studentPanel {
+    position: fixed;
+    background-color: rgb(229, 226, 212);
+    height: 100vh;
     margin-right: 20px;
     padding: 20px;
     width: 250px;
+    top: 65px;
+    left: -250px;
+    transition: left 400ms ease-in;
 }
 
 .studentPanel .help {
@@ -86,9 +117,84 @@ a {
     color: black;
 }
 
+
+.userName {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+
+.userName:hover {
+    text-decoration: underline;
+}
+
+.logOutButton {
+    background: rgb(239 68 68);
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: all 300ms ease-in-out;
+}
+
+.logOutButton:hover {
+    background: rgb(220 38 38);
+}
+
+.contentBlock {
+    /*position: relative;*/
+    display: flex;
+    justify-content: space-between;
+    /*height: 100vh; !* сделали, чтобы подвал был внизу *!*/
+    margin-top: 65px;
+    margin-right: 20px; /* 12px */
+    margin-left: 20px;
+}
+
+.recordBook {
+    /*z-index: -5;*/
+    /*background-color: #E5E7EB;*/
+    /*width: 80%;*/
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* перенос */
+}
+
+.photoBlock {
+    position: relative;
+    width: calc((100% / 3) - 10px);
+    height: 0;
+    padding-bottom: 20%;
+    margin-bottom: 15px;
+    overflow: hidden; /* обрезает то, что выходит за рамки блока */
+    border-radius: 5px;
+}
+
+.photo {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* св-во для картинки для растягивания по области */
+}
+
+
 .footer {
     padding: 16px;
     /*background: #4B5563;*/
+    clear: both;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -111,5 +217,39 @@ a {
 .link:hover {
     text-decoration: underline;
 }
+
+/* когда ширина меньше 1080 этот запрос работает */
+@media (max-width: 900px) {
+    .photoBlock {
+        /* делаем 2 картинки в ряд */
+        width: calc((100% / 2) - 7px);
+        padding-bottom: 35%;
+        margin-bottom: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .photoBlock {
+        /* делаем 1 картинку в ряд */
+        width: 100%;
+        padding-bottom: 65%;
+    }
+    .logOutButton {
+        padding: 2px 5px;
+    }
+    .pageName{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .rightBlock {
+        display: flex;
+        justify-content: right;
+    }
+}
+
+
+
 
 

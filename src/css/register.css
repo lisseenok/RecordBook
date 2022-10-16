@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+* {
+    font-family: Nunito, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body {
+    background-color: rgb(255 251 235);
+}
+
+.navBar {
+    position: fixed;
+    z-index: 10;
+    background-color: rgb(255 251 235);
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.pageName {
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.burgerCheckbox {
+    height: 24px;
+    width: 24px;
+    margin-right: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.logInButton {
+    background: rgb(98, 95, 73);
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.logInButton:hover {
+    background: rgb(148, 146, 110);
+}
+
+.registerBlock {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.registerForm {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    width: 26%;
+    min-width: 200px;
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+.inputText {
+    width: 100%;
+    border: 1px solid #adadad;
+    padding: 8px;
+    margin-bottom: 15px;
+    background-color: rgb(255, 251, 244);
+    border-radius: 10px;
+    font-size: medium;
+    outline: none;
+}
+.inputText:focus{
+    border: 2px solid rgb(98, 95, 73);
+}
+
+form input::placeholder {
+    color: #adadad;
+}
+.courseSelect{
+    outline: none;
+}
+.courseSelect:focus{
+    border: 2px solid rgb(98, 95, 73);
+}
+
+.submitButton {
+    border: 1px solid #adadad;
+    margin-bottom: 15px;
+    background-color: rgb(255, 251, 244);
+    border-radius: 10px;
+    font-size: medium;
+    cursor: pointer;
+    width: 60%;
+    padding: 8px;
+    transition: background-color 300ms ease-in;
+}
+.checkBoxAccept {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.checkBoxAccept input{
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.submitButton:hover {
+    background-color: rgb(255, 237, 202);
+}

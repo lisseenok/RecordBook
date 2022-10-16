@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+* {
+    font-family: Nunito, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.body {
+    background-color: rgb(255 251 235);
+}
+
+.navBar {
+    position: fixed;
+    z-index: 10;
+    background-color: rgb(255 251 235);
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.pageName {
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    cursor: pointer;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.burgerCheckbox {
+    height: 24px;
+    width: 24px;
+    margin-right: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.logInButton {
+    background: rgb(98, 95, 73);
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.logInButton:hover {
+    background: rgb(148, 146, 110);
+}
+
+.contentBlock {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    margin-top: 65px;
+    margin-right: 20px; /* 12px */
+    margin-left: 0.75rem;
+}
+
+.videoInstruction {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 250px);
+}
+
+.studentPanel {
+    margin-right: 20px;
+    padding: 20px;
+    width: 250px;
+}
+
+.studentPanel .help {
+    text-decoration: none;
+    color: black;
+}
+.iframe{
+    width: 100%;
+    max-width: 800px;
+}
+
+.videoPlayer{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
