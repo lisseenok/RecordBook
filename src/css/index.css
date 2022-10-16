@@ -58,7 +58,6 @@ a {
 }
 
 .burgerBlock {
-    /*background-color: red;*/
     display: flex;
     align-items: center;
     line-height: 0;
@@ -109,7 +108,7 @@ a {
     width: 250px;
     top: 65px;
     left: -250px;
-    transition: left 400ms ease-in;
+    transition: 400ms ease-in;
 }
 
 .studentPanel .help {
@@ -123,6 +122,7 @@ a {
     text-decoration: none;
     color: black;
     white-space: nowrap;
+    transition: letter-spacing 700ms ease-out;
 }
 
 .userName:hover {
@@ -146,49 +146,65 @@ a {
     /*position: relative;*/
     display: flex;
     justify-content: space-between;
-    /*height: 100vh; !* сделали, чтобы подвал был внизу *!*/
+    height: 100vh; /* сделали, чтобы подвал был внизу */
     margin-top: 65px;
     margin-right: 20px; /* 12px */
     margin-left: 20px;
 }
 
 .recordBook {
-    /*z-index: -5;*/
-    /*background-color: #E5E7EB;*/
-    /*width: 80%;*/
     width: 100%;
-
     display: flex;
     flex-direction: column;
 }
 
-.gallery {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* перенос */
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #88a489;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
 }
 
-.photoBlock {
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    width: 87px;
     position: relative;
-    width: calc((100% / 3) - 10px);
-    height: 0;
-    padding-bottom: 20%;
-    margin-bottom: 15px;
-    overflow: hidden; /* обрезает то, что выходит за рамки блока */
-    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
-.photo {
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
     position: absolute;
-    top:0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* св-во для картинки для растягивания по области */
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #596d5a;}
+
 
 
 .footer {
@@ -220,20 +236,10 @@ a {
 
 /* когда ширина меньше 1080 этот запрос работает */
 @media (max-width: 900px) {
-    .photoBlock {
-        /* делаем 2 картинки в ряд */
-        width: calc((100% / 2) - 7px);
-        padding-bottom: 35%;
-        margin-bottom: 14px;
-    }
+
 }
 
 @media (max-width: 600px) {
-    .photoBlock {
-        /* делаем 1 картинку в ряд */
-        width: 100%;
-        padding-bottom: 65%;
-    }
     .logOutButton {
         padding: 2px 5px;
     }

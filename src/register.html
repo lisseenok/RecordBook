@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/src/css/register.css" rel="stylesheet">
+    <link href="css/register.css" rel="stylesheet">
     <title>Регистрация</title>
 </head>
 <body class="body">
-    <nav class="navBar">
-        <div class="header">
-            <div class="title">
-                <button class="leftCowButton">
-                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
-                        <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/>
-                    </svg>
-                </button>
-                <div class="pageName">Электронная зачетная книжка</div>
+<nav class="navBar">
+    <div class="header">
+        <div class="title">
+            <div class="burgerBlock">
+                <input id="burger" class="burgerCheckbox" type="checkbox"/>
+                <label for="burger"></label>
+                <span class="pageName">Электронная зачетная книжка</span>
+                <aside class="studentPanel">
+                    <div style="font-weight: bold; font-size: 1.25rem; line-height: 1.75rem;">Панель студента</div>
+                </aside>
             </div>
-
-            <div>
-                <a href="" class="logInButton">Войти</a>
-            </div>
-
         </div>
-        <hr/>
-    </nav>
+
+        <div class="rightBlock">
+            <a href="" class="userName">Фамилия И. О.</a>
+            <a href="" class="logOutButton">Выйти</a>
+        </div>
+
+    </div>
+    <hr/>
+</nav>
     <div class="registerBlock">
         <form method="POST" class="registerForm">
             <h2 style="margin-bottom: 20px">Регистрация</h2>

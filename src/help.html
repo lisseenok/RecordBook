@@ -3,53 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/src/css/help.css" rel="stylesheet">
+    <link href="css/help.css" rel="stylesheet">
     <title>Помощь</title>
 </head>
 <body class="body">
-    <nav class="navBar">
-        <div class="header">
-            <div class="title">
-                <button class="leftCowButton">
-                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
-                        <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/>
-                    </svg>
-                </button>
-                <a href="index.html">
-                    <div class="pageName">Электронная зачетная книжка</div>
-                </a>
+<nav class="navBar">
+    <div class="header">
+        <div class="title">
+            <div class="burgerBlock">
+                <input id="burger" class="burgerCheckbox" type="checkbox"/>
+                <label for="burger"></label>
+                <span class="pageName">Электронная зачетная книжка</span>
+                <aside class="studentPanel">
+                    <div style="font-weight: bold; font-size: 1.25rem; line-height: 1.75rem;">Панель студента</div>
+                    <div style="font-size: 1.25rem; line-height: 1.75rem; margin: 16px 0;">
+                        <a href="index.html" style="text-decoration: none; color: black;"><span>Зачетная книжка</span></a>
+                    </div>
+                    <div style="font-size: 1.25rem; line-height: 1.75rem; margin: 16px 0;">
+                        <a href="help.html" class="help"><span>Помощь</span></a>
+                    </div>
+                </aside>
             </div>
-
-            <div>
-                <a href="" class="logInButton">Войти</a>
-            </div>
-
         </div>
-        <hr/>
-    </nav>
+
+        <div class="rightBlock">
+            <a href="" class="userName">Фамилия И. О.</a>
+            <a href="" class="logOutButton">Выйти</a>
+        </div>
+
+    </div>
+    <hr/>
+</nav>
     <main class="contentBlock">
-        <aside class="studentPanel">
-            <div style="font-weight: bold; font-size: 1.25rem; line-height: 1.75rem;">Панель студента</div>
-            <div style="font-size: 1.25rem; line-height: 1.75rem; margin: 16px 0;">
-                <a href="" style="text-decoration: none; color: black;"><span>Зачетная книжка</span></a>
-            </div>
-            <div style="font-size: 1.25rem; line-height: 1.75rem; margin: 16px 0;">
-                <a href="help.html" class="help"><span>Помощь</span></a>
-            </div>
-        </aside>
+        <h1>
+            <span>
+                Помощь
+            </span>
+        </h1>
+        <div class="gallery">
+            <article class="card">
+                <img src="../src/resources/call.png" class="cardImg" alt="">
+                <h2 class="cardName"> Возникли вопросы? </h2>
 
-        <div class="videoInstruction">
-            <h1 style="margin-bottom: 15px">
-                Видео-инструкция
-            </h1>
-            <div class="iframe">
-                <video class ="videoPlayer" controls autoplay="autoplay" muted="muted" poster="src/resources/kotic.jpg">
-                    <source src="resources/cat.mp4" type="video/mp4">
-                </video>
-            </div>
+            </article>
+
+            <article class="card">
+                <img src="../src/resources/quality.png" class="cardImg" alt="">
+                <h2 class="cardName"> Увидели неверную оценку? </h2>
+
+            </article>
+
+            <article class="card">
+                <img src="../src/resources/support.png" class="cardImg" alt="">
+                <h2 class="cardName"> Проблемы с сайтом? </h2>
+
+            </article>
         </div>
-
+        <article class="gorizontalCard">
+<!--            <img src="../src/resources/support.png" class="cardImg" alt="">-->
+            <h2 class="cardName" style="line-height: 2"> Обратитесь в поддержку </br> +7(999)999-99-99 </h2>
+        </article>
     </main>
+
+<footer class="footer">
+    <address>
+        <a href="https://www.mirea.ru" style="color: black">РТУ МИРЭА</a>
+    </address>
+    <ul class="links">
+        <li>
+            <a href="" class="link">About</a>
+        </li>
+        <li>
+            <a href="" class="link">Privacy Policy</a>
+        </li>
+        <li>
+            <a href="" class="link">Licensing</a>
+        </li>
+        <li>
+            <a href="" class="link">Contact</a>
+        </li>
+    </ul>
+</footer>
 
 </body>
 </html>

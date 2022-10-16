@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/index.css" rel="stylesheet">
-    <title>Главная</title>
+    <title>Зачетная книжка</title>
 </head>
 <body class="body">
 <nav class="navBar">
     <div class="header">
-
         <div class="title">
             <div class="burgerBlock">
                 <input id="burger" class="burgerCheckbox" type="checkbox"/>
@@ -40,64 +39,37 @@
 
     <div class="recordBook">
         <h1>
-            тут табличка с зачеткой точнее пока тут просто котики смешные
+            Зачетная книжка
         </h1>
-        <div class="gallery">
-            <div class="photoBlock">
-                <img src="../src/photos/photo1.jpg" class="photo" alt="cat">
-            </div>
-            <div class="photoBlock">
-                <img src="../src/photos/photo2.jpg" class="photo" alt="cat">
-            </div>
-            <div class="photoBlock">
-                <img src="../src/photos/photo3.jpg" class="photo" alt="cat">
-            </div>
-            <div class="photoBlock">
-                <img src="../src/photos/photo4.jpg" class="photo" alt="cat">
-            </div>
-            <div class="photoBlock">
-                <img src="../src/photos/photo5.jpg" class="photo" alt="cat">
-            </div>
-            <div class="photoBlock">
-                <img src="../src/photos/photo6.jpg" class="photo" alt="cat">
-            </div>
-            <div class="photoBlock">
-                <img src="../src/photos/photo7.jpg" class="photo" alt="cat">
-            </div>
-            <div class="photoBlock">
-                <img src="../src/photos/photo8.jpg" class="photo" alt="cat">
-            </div>
-            <div class="photoBlock">
-                <img src="../src/photos/photo9.jpg" class="photo" alt="cat">
-            </div>
-            <div class="photoBlock">
-                <img src="../src/photos/photo1.jpg" class="photo" alt="cat">
-            </div>
-            <div class="photoBlock">
-                <img src="../src/photos/photo2.jpg" class="photo" alt="cat">
-            </div>
-            <div class="photoBlock">
-                <img src="../src/photos/photo3.jpg" class="photo" alt="cat">
-            </div>
-            <div class="photoBlock">
-                <img src="../src/photos/photo4.jpg" class="photo" alt="cat">
-            </div>
-            <div class="photoBlock">
-                <img src="../src/photos/photo5.jpg" class="photo" alt="cat">
-            </div>
-            <div class="photoBlock">
-                <img src="../src/photos/photo6.jpg" class="photo" alt="cat">
-            </div>
-            <div class="photoBlock">
-                <img src="../src/photos/photo7.jpg" class="photo" alt="cat">
-            </div>
-            <div class="photoBlock">
-                <img src="../src/photos/photo8.jpg" class="photo" alt="cat">
-            </div>
-            <div class="photoBlock">
-                <img src="../src/photos/photo9.jpg" class="photo" alt="cat">
+        <div class="dropdown">
+            <button class="dropbtn">Семестр:</button>
+            <div class="dropdown-content">
+                <a href="#">1 семестр</a>
+                <a href="#">2 семестр</a>
+                <a href="#">3 семестр</a>
             </div>
         </div>
+
+        <table>
+            <colgroup>
+                <col span="2" style="background:#efe6b4"><!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
+                <col style="background-color:LightCyan"><!-- Задаем цвет фона для следующего (одного) столбца таблицы-->
+            </colgroup>
+            <tr>
+                <th>Учебная дисциплина</th>
+                <th>Оценка</th>
+            </tr>
+            <tr>
+                <td>Физика</td><td>3</td>
+            </tr>
+            <tr>
+                <td>Математический анализ</td><td>2</td>
+            </tr>
+        </table>
+        <span>
+            Средний балл: 2,5
+        </span>
+
     </div>
 
 </main>

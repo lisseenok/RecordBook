@@ -16,18 +16,30 @@ a {
 }
 
 .navBar {
+    box-sizing: border-box;
     position: fixed;
     z-index: 10;
     background-color: rgb(255 251 235);
     top: 0;
     left: 0;
+    height: 65px;
     width: 100%;
+}
+.navBar hr {
+    height: 1px;
+    border: none;
+    color: black;
+    background-color: black;
+    opacity: 30%;
+    margin-block: 0;
+    margin-inline: 0;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     padding: 16px 0;
+    height: 64px;
     align-items: center;
     margin: 0 20px;
 }
@@ -35,7 +47,7 @@ a {
 .pageName {
     font-weight: bold;
     font-size: 1.25rem;
-    line-height: 1.75rem;
+    line-height: 1rem;
 }
 
 .title {
@@ -43,25 +55,91 @@ a {
     display: flex;
     align-items: center;
 }
-.burgerCheckbox {
-    height: 24px;
-    width: 24px;
-    margin-right: 20px;
-    border: none;
-    background: none;
-    cursor: pointer;
+
+.burgerBlock {
+    display: flex;
+    align-items: center;
+    line-height: 0;
 }
-.logInButton {
-    background: rgb(98, 95, 73);
+
+.burgerBlock .burgerCheckbox {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.burgerCheckbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+
+.burgerBlock .burgerCheckbox+label::before {
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+    content: "";
+    /*border: 1px black solid;*/
+    background: url("../resources/burger.svg");
+    flex-shrink: 0; /* сколько элементик готов отдать */
+    flex-grow: 0; /* сколько элементик готов забрать (свободного пр-ва) */
+    width: 24px;
+    height: 24px;
+}
+
+/* если нажали на бургер, то выдвигается панель */
+.burgerBlock .burgerCheckbox:checked ~.studentPanel {
+    left: 0;
+}
+
+/* сменяем на крестик, когда меню открыто */
+.burgerBlock .burgerCheckbox:checked +label::before  {
+    background: url("../resources/burger 2.svg");
+}
+
+.studentPanel {
+    position: fixed;
+    background-color: rgb(229, 226, 212);
+    height: 100vh;
+    margin-right: 20px;
+    padding: 20px;
+    width: 250px;
+    top: 65px;
+    left: -250px;
+    transition: 400ms ease-in;
+}
+
+.studentPanel .help {
+    text-decoration: none;
+    color: black;
+}
+
+
+.userName {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+    transition: letter-spacing 700ms ease-out;
+}
+
+.userName:hover {
+    text-decoration: underline;
+}
+
+.logOutButton {
+    background: rgb(239 68 68);
     border-radius: 20px;
     color: white;
     text-decoration: none;
     padding: 5px 15px;
+    transition: all 300ms ease-in-out;
 }
 
-.logInButton:hover {
-    background: rgb(148, 146, 110);
+.logOutButton:hover {
+    background: rgb(220 38 38);
 }
+
 
 .registerBlock {
     width: 100%;

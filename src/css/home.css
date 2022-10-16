@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+* {
+    font-family: Nunito, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.body {
+    background-color: rgb(255 251 235);
+}
+
+.navBar {
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 10;
+    background-color: rgb(255 251 235);
+    top: 0;
+    left: 0;
+    height: 65px;
+    width: 100%;
+}
+.navBar hr {
+    height: 1px;
+    border: none;
+    color: black;
+    background-color: black;
+    opacity: 30%;
+    margin-block: 0;
+    margin-inline: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+    height: 64px;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.pageName {
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1rem;
+}
+
+.buttonBlock {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+}
+
+.logInButton {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+.log-in {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: rgb(255,27,0);
+    background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+}
+.log-in:hover {
+    color: #f0094a;
+    background: transparent;
+    box-shadow:none;
+}
+.log-in:before,
+.log-in:after {
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #f0094a;
+    box-shadow:
+            -1px -1px 5px 0px #fff,
+            7px 7px 20px 0px #0003,
+            4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+}
+
+.log-in:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+
+.log-in:hover:before,
+.log-in:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+
+
+.regInButton {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+}
+.regInButton:hover, .regInButton:focus {
+    color: #fff;
+    outline: 0;
+}
+
+.reg-in {
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+.reg-in:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
+
+.logAsEmployeeInButton {
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size:large;
+    padding: 10px 20px;
+    border: 0;
+    margin: 20px;
+    display: inline-block;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+.logAsEmployeeInButton:hover {
+    background-position: right center;
+}
+
+.videoBlock{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video {
+    width: 500px;
+    height: 300px;
+    border: 5px solid grey;
+    overflow: hidden;
+    position: relative;
+}
+
+.videoPlayer{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.textBlock{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.textBlock:before, .textBlock:after{
+    content: '';
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #866f70;
+    opacity: 0;
+    transition: 1s;
+}
+.textBlock:before{
+    transform: translateX(-125%) rotate(45deg);
+}
+.textBlock:after{
+    transform: translateX(195%) rotate(45deg);
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.text h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+    transform: scale(0);
+    transition: .5s;
+}
+.text p{
+    font-size: 18px;
+    margin: 0 100px;
+    text-align: justify;
+    transform: scale(1);
+    transition: .5s;
+    opacity: 0;
+}
+
+
+.video:hover video{
+    transform: rotate(-30deg) scale(2);
+    filter: blur(2px);
+}
+.video video{
+    transition: .5s;
+}
+
+.video:hover .textBlock:before{
+    transform: translateX(92%) rotate(45deg) scale(2);
+    transition: .5s;
+    opacity: .6;
+}
+
+.video:hover .textBlock:after{
+    transform: translateX(-25%) rotate(45deg) scale(2);
+    transition: .5s;
+    opacity: .6;
+}
+
+.video:hover .text h1{
+    transform: scale(1);
+}
+.video:hover .text p{
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
+
+
+/*!* когда ширина меньше 1080 этот запрос работает *!*/
+/*@media (max-width: 900px) {*/
+/*    .photoBlock {*/
+/*        !* делаем 2 картинки в ряд *!*/
+/*        width: calc((100% / 2) - 7px);*/
+/*        padding-bottom: 35%;*/
+/*        margin-bottom: 14px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 600px) {*/
+/*    .photoBlock {*/
+/*        !* делаем 1 картинку в ряд *!*/
+/*        width: 100%;*/
+/*        padding-bottom: 65%;*/
+/*    }*/
+/*    .pageName{*/
+/*        font-size: 1rem;*/
+/*    }*/
+/*}*/
+
