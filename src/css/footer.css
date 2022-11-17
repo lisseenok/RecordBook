@@ -1,0 +1,26 @@
+.footer {
+    padding: 16px;
+    /*background: #4B5563;*/
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(35, 88, 164, 0.05);
+    box-shadow: inset 0px 4px 14px rgba(35, 88, 164, 0.15);
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.link {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

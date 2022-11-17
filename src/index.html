@@ -4,41 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/index.css" rel="stylesheet">
-    <title>Зачетная книжка</title>
+    <link href="css/burger.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <title> Зачетная книжка</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body class="body">
 <nav class="navBar">
     <div class="header">
-        <div class="title">
-            <div class="burgerBlock">
-                <input id="burger" class="burgerCheckbox" type="checkbox"/>
-                <label for="burger"></label>
-                <span class="pageName">Электронная зачетная книжка</span>
-                <aside class="studentPanel">
-                    <div style="font-weight: bold; font-size: 1.25rem; line-height: 1.75rem;">Панель студента</div>
-                    <div style="font-size: 1.25rem; line-height: 1.75rem; margin: 16px 0;">
-                        <a href="" style="text-decoration: none; color: black;"><span>Зачетная книжка</span></a>
-                    </div>
-                    <div style="font-size: 1.25rem; line-height: 1.75rem; margin: 16px 0;">
-                        <a href="help.html" class="help"><span>Помощь</span></a>
-                    </div>
-                </aside>
-            </div>
-        </div>
 
+        <span class="pageName"> <a href="index.html" style="color: black">Электронная зачетная книжка</a></span>
         <div class="rightBlock">
-            <a href="" class="userName">Фамилия И. О.</a>
-            <a href="" class="logOutButton">Выйти</a>
+            <a href="profile.html" class="userName">Фамилия И. О.</a>
+            <a href="home.html" class="logOutButton">Выйти</a>
         </div>
 
     </div>
-    <hr/>
 </nav>
+
+<div class="burger_menu">
+    <a href="#" class="burger_menu_button">
+        <span class="burger_menu_lines"></span>
+    </a>
+    <nav class="burger_menu_nav">
+        <a href="index.html" class="burger_menu_link">Зачетная книжка</a>
+        <a href="help.html" class="burger_menu_link">Помощь</a>
+    </nav>
+
+    <div class="burger_menu_overlay">
+
+    </div>
+</div>
+<script src="js/burger.js"></script>
+
 
 <main class="contentBlock">
 
     <div class="recordBook">
-        <h1>
+        <h1 style="margin-bottom: 10px">
             Зачетная книжка
         </h1>
         <div class="dropdown">
@@ -52,23 +56,34 @@
 
         <table>
             <colgroup>
-                <col span="2" style="background:#efe6b4"><!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
-                <col style="background-color:LightCyan"><!-- Задаем цвет фона для следующего (одного) столбца таблицы-->
+                <col span="4" style="background:rgb(229, 226, 212)"><!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
+<!--                <col style="background-color:LightCyan">&lt;!&ndash; Задаем цвет фона для следующего (одного) столбца таблицы&ndash;&gt;-->
             </colgroup>
             <tr>
                 <th>Учебная дисциплина</th>
+                <th>Вид аттестации</th>
+                <th>Преподаватель</th>
                 <th>Оценка</th>
             </tr>
             <tr>
-                <td>Физика</td><td>3</td>
+                <td>Физика</td><td>Экзамен</td><td>Иванов И. И.</td><td>4</td>
             </tr>
             <tr>
-                <td>Математический анализ</td><td>2</td>
+                <td>Математический анализ</td><td>Экзамен</td><td>Петров П. П.</td><td>5</td>
+            </tr>
+            <tr>
+                <td>Линейная алгебра и аналитическая геометрия</td><td>Экзамен</td><td>Сидоров П. П.</td><td>5</td>
+            </tr>
+            <tr>
+                <td>Физическая культура и спорт</td><td>Зачет</td><td>Васильев П. П.</td><td>зачет</td>
+            </tr>
+            <tr>
+                <td>Иностранный язык</td><td>Зачет</td><td>Волкова А. П.</td><td>зачет</td>
+            </tr>
+            <tr>
+                <td>Объектно-ориентированное программирование</td><td>Курсовая работа</td><td>Борисов К. Д.</td><td>5</td>
             </tr>
         </table>
-        <span>
-            Средний балл: 2,5
-        </span>
 
     </div>
 

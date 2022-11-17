@@ -13,134 +13,8 @@ a {
 
 .body {
     background-color: rgb(255 251 235);
-
 }
 
-.navBar {
-    box-sizing: border-box;
-    position: fixed;
-    z-index: 10;
-    background-color: rgb(255 251 235);
-    top: 0;
-    left: 0;
-    height: 65px;
-    width: 100%;
-}
-.navBar hr {
-    height: 1px;
-    border: none;
-    color: black;
-    background-color: black;
-    opacity: 30%;
-    margin-block: 0;
-    margin-inline: 0;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 0;
-    height: 64px;
-    align-items: center;
-    margin: 0 20px;
-}
-
-.pageName {
-    font-weight: bold;
-    font-size: 1.25rem;
-    line-height: 1rem;
-}
-
-.title {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.burgerBlock {
-    display: flex;
-    align-items: center;
-    line-height: 0;
-}
-
-.burgerBlock .burgerCheckbox {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-}
-.burgerCheckbox+label {
-    display: inline-flex;
-    align-items: center;
-    user-select: none;
-}
-
-
-.burgerBlock .burgerCheckbox+label::before {
-    display: inline-block;
-    margin-right: 15px;
-    cursor: pointer;
-    content: "";
-    /*border: 1px black solid;*/
-    background: url("../resources/burger.svg") no-repeat;
-    /*background: url("burger.svg") no-repeat;*/
-    flex-shrink: 0; /* сколько элементик готов отдать */
-    flex-grow: 0; /* сколько элементик готов забрать (свободного пр-ва) */
-    width: 24px;
-    height: 24px;
-}
-
-/* если нажали на бургер, то выдвигается панель */
-.burgerBlock .burgerCheckbox:checked ~.studentPanel {
-    left: 0;
-}
-
-/* сменяем на крестик, когда меню открыто */
-.burgerBlock .burgerCheckbox:checked +label::before  {
-    background: url("../resources/burger 2.svg") no-repeat;
-}
-
-.studentPanel {
-    position: fixed;
-    background-color: rgb(229, 226, 212);
-    height: 100vh;
-    margin-right: 20px;
-    padding: 20px;
-    width: 250px;
-    top: 65px;
-    left: -250px;
-    transition: 400ms ease-in;
-}
-
-.studentPanel .help {
-    text-decoration: none;
-    color: black;
-}
-
-
-.userName {
-    margin-right: 20px;
-    text-decoration: none;
-    color: black;
-    white-space: nowrap;
-    transition: letter-spacing 700ms ease-out;
-}
-
-.userName:hover {
-    text-decoration: underline;
-}
-
-.logOutButton {
-    background: rgb(239 68 68);
-    border-radius: 20px;
-    color: white;
-    text-decoration: none;
-    padding: 5px 15px;
-    transition: all 300ms ease-in-out;
-}
-
-.logOutButton:hover {
-    background: rgb(220 38 38);
-}
 
 .contentBlock {
     /*position: relative;*/
@@ -154,6 +28,7 @@ a {
 
 .recordBook {
     width: 100%;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -161,7 +36,7 @@ a {
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #88a489;
+    background-color: rgb(174, 169, 145);
     color: white;
     padding: 5px 10px;
     font-size: 16px;
@@ -203,36 +78,8 @@ a {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #596d5a;}
+.dropdown:hover .dropbtn {background-color: rgb(128, 124, 108);}
 
-
-
-.footer {
-    padding: 16px;
-    /*background: #4B5563;*/
-    clear: both;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: rgba(35, 88, 164, 0.05);
-    box-shadow: inset 0px 4px 14px rgba(35, 88, 164, 0.15);
-}
-
-.links {
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-.link {
-    margin-right: 10px;
-    text-decoration: none;
-    color: black;
-}
-
-.link:hover {
-    text-decoration: underline;
-}
 
 /* когда ширина меньше 1080 этот запрос работает */
 @media (max-width: 900px) {

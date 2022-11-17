@@ -1,0 +1,59 @@
+.navBar {
+    box-sizing: border-box;
+    position: fixed;
+
+    z-index: 10;
+
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 98%;
+
+    height: 65px;
+
+    background-color: rgba(229, 226, 212, 0.9);
+    border-radius: 15px;
+    backdrop-filter: blur(2px);
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    height: 64px;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.pageName {
+    margin: 35px;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1rem;
+}
+
+.userName {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+    transition: letter-spacing 700ms ease-out;
+}
+
+.userName:hover {
+    text-decoration: underline;
+}
+
+.logOutButton {
+    background: rgb(239 68 68);
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: all 300ms ease-in-out;
+}
+
+.logOutButton:hover {
+    background: rgb(220 38 38);
+}

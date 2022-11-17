@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/help.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
     <link href="css/burger.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <title>Помощь</title>
+    <title>Личный кабинет</title>
 </head>
 <body class="body">
 <nav class="navBar">
@@ -37,42 +36,30 @@
     </div>
 </div>
 <script src="js/burger.js"></script>
+
 <main class="contentBlock">
-    <h1>
-        <span>
-            Помощь
-        </span>
-    </h1>
-    <div class="gallery">
-        <article class="card">
-            <img src="../src/resources/call.png" class="cardImg" alt="">
-            <h2 class="cardName"> Возникли вопросы? </h2>
+    <div class="userInfo">
+        <img class="img" src="photos/user.png">
+        <h2 class="text">Фамилия И. О.</h2>
+        <div class="personalInfo">
+            <h3 class="text">Личные данные:</h3>
+            <span class="text">Имя: Иван</span>
+            <span class="text">Фамилия: Иванов</span>
+            <span class="text">Отчетсво: Иванович</span>
+            <span class="text">Почта: ivan@edu.mirea.ru</span>
+            <span class="text">Номер телефона: +71234567890</span>
+            <span class="text">Группа: ИКБО-00-00</span>
+            <span class="text">Курс: 1</span>
+        </div>
+        <div class="mainInfo">
+            <h3 class="text">Общая информация:</h3>
+            <span class="text">Количество академических задолженностей: 0</span>
+        </div>
 
-        </article>
 
-        <article class="card">
-            <img src="../src/resources/quality.png" class="cardImg" alt="">
-            <h2 class="cardName"> Увидели неверную оценку? </h2>
-
-        </article>
-
-        <article class="card">
-            <img src="../src/resources/support.png" class="cardImg" alt="">
-            <h2 class="cardName"> Проблемы с сайтом? </h2>
-
-        </article>
     </div>
-    <article class="gorizontalCard">
-        <span class="topLine"></span>
-        <span class="rightLine"></span>
-        <span class="bottomLine"></span>
-        <span class="leftLine"></span>
-        <h2 class="cardName" style="line-height: 2"> Обратитесь в поддержку </br> +7(999)999-99-99 </h2>
-    </article>
-
-
-
 </main>
+
 
 <footer class="footer">
     <address>
@@ -93,6 +80,5 @@
         </li>
     </ul>
 </footer>
-
 </body>
 </html>
