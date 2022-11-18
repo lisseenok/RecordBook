@@ -32,6 +32,10 @@ a {
     display: flex;
     flex-direction: column;
 }
+.h1Name {
+    padding-top: 10px;
+    font-size: xx-large;
+}
 
 
 /* Dropdown Button */
@@ -83,22 +87,22 @@ a {
 
 /* когда ширина меньше 1080 этот запрос работает */
 @media (max-width: 900px) {
-
-}
-
-@media (max-width: 600px) {
-    .logOutButton {
-        padding: 2px 5px;
+    .h1Name {
+        font-size: x-large;
     }
-    .pageName{
-        font-size: 1rem;
+    .dropdown {
+        margin-bottom: 15px;
+        margin-top: 3px;
     }
 }
 
-@media (max-width: 600px) {
-    .rightBlock {
-        display: flex;
-        justify-content: right;
+@media (max-width: 450px) {
+    .h1Name {
+        font-size: large;
+    }
+    .dropdown {
+        margin-bottom: 10px;
+        margin-top: 3px;
     }
 }
 

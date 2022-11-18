@@ -1,8 +1,8 @@
 .burger_menu_button {
     position: fixed;
-    margin: 20px;
-    top: 10px;
-    left: 10px;
+    /*margin: 20px;*/
+    top: 2.9%;
+    left: 2%;
     z-index: 30;
     width: 24px;
     height: 24px;
@@ -89,4 +89,41 @@
 .burger_menu_active .burger_menu_overlay {
     display: block;
     /*backdrop-filter: blur(2px);*/
+}
+
+@media (max-width: 1550px) {
+    .burger_menu_button {
+        left: 2.3%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .burger_menu_button {
+        left: 2.4%;
+    }
+}
+
+@media (max-width: 930px) {
+    .burger_menu_button {
+        left: 3%;
+    }
+}
+
+@media (max-width: 720px) {
+    .burger_menu_button {
+        left: 3.5%;
+    }
+}
+
+@media (max-width: 530px) {
+    .burger_menu_button {
+        left: 3.9%;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .burger_menu_button {
+        left: 4.3%;
+    }
 }

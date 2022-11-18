@@ -30,6 +30,7 @@ a {
     align-items: center;
     width: 26%;
     min-width: 200px;
+    /*justify-content: center;*/
     /*position: absolute;*/
     /*top: 50%;*/
     /*left: 50%;*/
@@ -63,14 +64,14 @@ form input::placeholder {
 .submitButton {
     text-align: center;
     border: 1px solid #adadad;
-    margin-bottom: 15px;
+    padding: 8px;
     background-color: rgb(255, 251, 244);
     border-radius: 10px;
     font-size: medium;
     cursor: pointer;
     width: 60%;
-    padding: 8px;
     transition: background-color 300ms ease-in;
+    margin: 15px;
 }
 .checkBoxAccept {
     display: flex;
@@ -88,4 +89,14 @@ form input::placeholder {
     background: rgb(195, 195, 195);
     border: 1px solid #4a688d;
 }
+
+.loginLink {
+    color: #2c2a2a;
+    margin: 15px;
+}
+
+.loginLink:hover{
+    text-decoration: underline;
+}
+
 
