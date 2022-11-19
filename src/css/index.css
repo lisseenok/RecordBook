@@ -104,6 +104,15 @@ a {
         margin-bottom: 10px;
         margin-top: 3px;
     }
+    .table {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 410px) {
+    .table {
+        font-size: 0.77rem;
+    }
 }
 
 
