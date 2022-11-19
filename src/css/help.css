@@ -56,8 +56,7 @@ a {
 
 
     overflow: hidden;
-    touch-action: none;
-    -ms-touch-action: none;
+    -webkit-mask: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 
     transition: all 300ms ease-in-out;
 }
@@ -66,7 +65,7 @@ a {
 .card::before {
     content: "";
     display: block;
-    width: 100%;
+    width: 150%;
     height: 100%;
     background-color: #bababa;
     transform: skewY(345deg);
@@ -192,5 +191,53 @@ a {
     .rightBlock {
         display: flex;
         justify-content: right;
+    }
+}
+
+@media (max-width: 670px) {
+    .card {
+        width: 150px;
+        height: 200px;
+        font-size: 0.6rem;
+    }
+    .cardImg {
+        width: 40%;
+    }
+    .card:hover .cardImg {
+        width: 55%;
+    }
+    .gorizontalCard {
+        width: 430px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 530px) {
+    .gallery {
+        flex-direction: column;
+    }
+    .card {
+        width: 180px;
+        height: 220px;
+        font-size: 0.7rem;
+    }
+    .cardImg {
+        width: 45%;
+    }
+    .card:hover .cardImg {
+        width: 60%;
+    }
+    .gorizontalCard {
+        width: 400px;
+        height: 80px;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .gorizontalCard {
+        width: 270px;
+        height: 60px;
+        font-size: 0.5rem;
     }
 }

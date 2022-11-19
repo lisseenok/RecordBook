@@ -13,12 +13,14 @@ a {
 }
 
 .body {
-    background-color: rgb(255 251 235);
+    height: 100vh;
+    background: -webkit-linear-gradient(90deg, #f8d2c7, #ed9277, rgba(153, 94, 77, 0.45));
+    background: linear-gradient(90deg, #f8d2c7, #ed9277, #995e4d);
 }
 
 .navBar {
-    background: rgba(204, 204, 204, 0.4);
-    backdrop-filter: blur(2px);
+    background: rgba(253, 211, 201, 0.3);
+    backdrop-filter: blur(5px);
     border-radius: 15px;
     box-sizing: border-box;
     position: fixed;
@@ -54,34 +56,40 @@ a {
 }
 
 .container {
-
+    height: 100%;
 }
 
-.bgVideo {
-    position: absolute;
-    width: 100%;
-    object-fit: cover;
-    height: 100vh;
-    z-index: -1;
-}
 
 .authBlock
 {
     width: 100%;
     display: flex;
     justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
+}
+
+.photo {
+    width: 150px;
+    position: absolute;
+    left: 63%;
+    top: 27%;
 }
 
 
 .authForm {
+    background: rgba(253, 211, 201, 0.3);
+    backdrop-filter: blur(5px);
+
     color: #2c2a2a;
     display: flex;
-    border-radius: 10px;
-    margin-top: 150px;
+    border-radius: 20px;
+    margin-top: 20px;
     flex-direction: column;
-    background: rgba(204, 204, 204, 0.4);
-    backdrop-filter: blur(2px);
+
     padding: 15px;
     align-items: center;
     width: 35%;
@@ -94,26 +102,26 @@ a {
 
 .inputText {
     width: 100%;
-    border: 1px solid #adadad;
+    border: 1px solid #9e7b7b;
     padding: 8px;
     margin-bottom: 15px;
     background: rgba(75, 80, 113, 0);
     border-radius: 10px;
     font-size: medium;
     outline: none;
-    color: #2c2a2a;
+    color: black;
 }
 .inputText:focus{
-    border: 2px solid rgb(98, 95, 73);
+    border: 2px solid #765050;
 }
 
 form input::placeholder {
-    color: #727070;
+    color: #9e7b7b;
 }
 
 .submitButton {
     text-align: center;
-    border: 1px solid #adadad;
+    border: 1px solid #865151;
     margin-bottom: 15px;
     background: rgba(75, 80, 113, 0);
     border-radius: 10px;
@@ -126,7 +134,7 @@ form input::placeholder {
 }
 
 .submitButton:hover{
-    background: rgb(181, 181, 181);
+    background: #ca8e7f;
 }
 .registerLink{
     color: #2c2a2a;

@@ -31,6 +31,7 @@ a {
 }
 .img {
     padding-bottom: 15px;
+    width: 100px;
 }
 .text {
     margin: 7px;
@@ -42,11 +43,25 @@ a {
     border: solid black 1px;
     margin-bottom: 10px;
     width: 100%;
+    text-align: center;
 }
 .mainInfo {
     display: flex;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     border: solid black 1px;
     width: 100%;
+}
+
+@media (max-width: 410px) {
+    .contentBlock {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .contentBlock {
+        font-size: 0.8rem;
+    }
 }
