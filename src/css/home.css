@@ -145,24 +145,31 @@ form input::placeholder {
     text-decoration: underline;
 }
 
-/*!* когда ширина меньше 1080 этот запрос работает *!*/
-/*@media (max-width: 900px) {*/
-/*    .photoBlock {*/
-/*        !* делаем 2 картинки в ряд *!*/
-/*        width: calc((100% / 2) - 7px);*/
-/*        padding-bottom: 35%;*/
-/*        margin-bottom: 14px;*/
-/*    }*/
-/*}*/
 
-/*@media (max-width: 600px) {*/
-/*    .photoBlock {*/
-/*        !* делаем 1 картинку в ряд *!*/
-/*        width: 100%;*/
-/*        padding-bottom: 65%;*/
-/*    }*/
-/*    .pageName{*/
-/*        font-size: 1rem;*/
-/*    }*/
-/*}*/
+@media (max-width: 1000px) {
+    .photo {
+        left: 60%;
+        width: 120px;
+    }
+    .authForm {
+        font-size: 0.9rem;
+    }
+}
 
+@media (max-width: 930px) {
+    .authBlock {
+        width: 180%;
+    }
+}
+
+@media (max-width: 630px) {
+    .authBlock {
+        width: 200%;
+    }
+}
+
+@media (max-width: 545px) {
+    .authBlock {
+        width: 250%;
+    }
+}
