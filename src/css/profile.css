@@ -17,13 +17,13 @@ a {
     display: flex;
     justify-content: space-between;
     height: 100%; /* сделали, чтобы подвал был внизу */
-    margin-top: 65px;
+    margin-top: 75px;
     margin-right: 20px; /* 12px */
     margin-left: 20px;
 }
 .userInfo {
     position: absolute;
-    top: 50%;
+    top: calc(50% + 50px);
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;

@@ -56,13 +56,14 @@ a {
 }
 
 .container {
-    height: 100%;
+    height: 97%;
 }
 
 
 .authBlock
 {
-    width: 100%;
+    width: 90%;
+    max-width: 400px;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -92,7 +93,7 @@ a {
 
     padding: 15px;
     align-items: center;
-    width: 35%;
+    width: 100%;
     min-width: 200px;
     /*position: absolute;*/
     /*top: 50%;*/
@@ -157,19 +158,19 @@ form input::placeholder {
 }
 
 @media (max-width: 930px) {
-    .authBlock {
-        width: 180%;
-    }
+    /*.authBlock {*/
+    /*    width: 180%;*/
+    /*}*/
 }
 
 @media (max-width: 630px) {
-    .authBlock {
-        width: 200%;
-    }
+    /*.authBlock {*/
+    /*    width: 200%;*/
+    /*}*/
 }
 
 @media (max-width: 545px) {
-    .authBlock {
-        width: 250%;
-    }
+    /*.authBlock {*/
+    /*    width: 250%;*/
+    /*}*/
 }

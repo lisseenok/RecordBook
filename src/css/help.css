@@ -32,7 +32,7 @@ a {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap; /* перенос */
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 
@@ -101,7 +101,7 @@ a {
     letter-spacing: 1px;
     font-size: small;
     margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .topLine {
@@ -213,6 +213,9 @@ a {
 }
 
 @media (max-width: 530px) {
+    .contentBlock {
+        height: auto;
+    }
     .gallery {
         flex-direction: column;
     }
