@@ -37,6 +37,15 @@ a {
     font-size: xx-large;
 }
 
+.table tr td {
+    padding: 3px;
+    border-radius: 5px;
+}
+.table tr th {
+    padding: 3px;
+    border-radius: 5px;
+}
+
 
 /* Dropdown Button */
 .dropbtn {
