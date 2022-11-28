@@ -1,22 +1,16 @@
 .navBar {
     box-sizing: border-box;
     position: fixed;
-
     z-index: 10;
-
     top: 10px;
     left: 50%;
     transform: translate(-50%, 0);
     width: 98%;
-
     height: 65px;
-
     background-color: rgba(229, 226, 212, 0.9);
     border-radius: 15px;
     backdrop-filter: blur(2px);
-
 }
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -25,23 +19,19 @@
     align-items: center;
     margin: 0 20px;
 }
-
 .rightBlock {
     align-items: center;
 }
-
 .leftBlock {
     display: flex;
     align-items: center;
 }
-
 .pageName {
     margin-left: 20px;
     font-weight: bold;
     font-size: 1.25rem;
     line-height: 1rem;
 }
-
 .userName {
     margin-right: 20px;
     text-align: center;
@@ -51,11 +41,9 @@
     white-space: nowrap;
     transition: letter-spacing 700ms ease-out;
 }
-
 .userName:hover {
     text-decoration: underline;
 }
-
 .logOutButton {
     background: rgb(239 68 68);
     border-radius: 20px;
@@ -65,7 +53,6 @@
     padding: 5px 15px;
     transition: all 300ms ease-in-out;
 }
-
 .logOutButton:hover {
     background: rgb(220 38 38);
 }
@@ -80,9 +67,11 @@
     .pageName {
         font-size: 1rem;
     }
+
     .userName {
         font-size: 0.8rem;
     }
+
     .logOutButton {
         font-size: 0.8rem;
     }
@@ -92,12 +81,15 @@
     .pageName {
         font-size: 1rem;
     }
+
     .userName {
         font-size: 1rem;
     }
+
     .logOutButton {
         font-size: 1rem;
     }
+
     .rightBlock {
         flex-direction: column;
         /*align-items: center;*/
@@ -110,10 +102,12 @@
     .pageName {
         font-size: 1rem;
     }
+
     .userName {
         font-size: 0.9rem;
         margin: 0;
     }
+
     .logOutButton {
         font-size: 0.9rem;
         margin: 2px 5px;

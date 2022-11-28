@@ -34,8 +34,6 @@ a {
     flex-wrap: wrap; /* перенос */
     margin-top: 30px;
 }
-
-
 .card {
     display: flex;
     flex-direction: column;
@@ -53,15 +51,10 @@ a {
     margin-right: 10px;
     margin-bottom: 10px;
     position: relative;
-
-
     overflow: hidden;
     -webkit-mask: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
-
     transition: all 300ms ease-in-out;
 }
-
-
 .card::before {
     content: "";
     display: block;
@@ -74,7 +67,6 @@ a {
     z-index: 1;
     transition: 0.5s;
 }
-
 .card:hover::before{
     transform: skewY(390deg);
     top: -70%;
